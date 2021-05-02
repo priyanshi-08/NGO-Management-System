@@ -1,0 +1,53 @@
+
+.slide-container {
+  //  position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 500px;
+}
+.effect {
+    animation-name: effect;
+    animation-duration: 1s;
+}
+@keyframes effect {
+    from {
+        opacity: 0.3;
+    }   
+    to {
+        opacity: 1;
+    }
+}
+.dot-container {
+    text-align: center;
+}
+span {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    background-color: darksalmon;
+    display: inline-block;
+}
+.active {
+    background-color: gold;
+}
+
+.slide-container .but {
+  position: absolute;
+  top: 60%;
+  left: 86%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: darkorange;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+} 
+
+.slide-container .but:hover {
+  background-color: black;
+}
